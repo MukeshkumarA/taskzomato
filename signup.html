@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <style>
+        .signUp .topic {
+            display: flex;
+        }
+
+        .signUp .signup-form-heading {
+            color: rgb(79, 79, 79);
+        }
+
+        .signUp img {
+            width: 30px;
+            height: 25px;
+        }
+
+        .signUp .form-container {
+            /* background-color: #0f0; */
+            border-radius: 10px;
+            padding: 30px;
+            padding-bottom: 10px;
+            position: relative;
+            top: 10vh;
+            border: 1px solid rgb(99, 95, 95);
+        }
+
+        body {
+            font-family: okra, Helvetica, sans-serif;
+        }
+
+        .signUp .or {
+            text-align: center;
+            margin-top: 3px;
+            font-size: 18px;
+            color: darkcyan;
+        }
+
+        .signUp input {
+            font-family: Okra, Helvetica, sans-serif, fontawesome;
+            font-size: 16px;
+        }
+
+        .signUp .terms{
+            font-size: 14px;
+            color: rgb(105, 105, 105);
+        }
+        .signUp .terms a{
+            /* font-size: 16px; */
+            color:rgb(239, 79, 95);
+        }
+        .signUp .btn{
+            font-size: 16px;
+        }
+
+       
+        .signUp .signupgoogle .btn
+        {
+            margin-top: -10px;
+            color: #696969;
+        }
+
+        .signUp .alreadyaccount{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #1c1c1c;
+        }
+
+        .signUp .alreadyaccount a{
+            color: rgb(239, 79, 95);
+            }
+            /* .signUp .form-container{
+                background-color: rgb(250, 233, 236);
+            }     */
+        
+    </style>
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <section class="container signUp">
+        <section class="row  justify-content-center">
+            <section class="col-md-7 col-sm-7 col-xl-5 col-lg-5">
+                <form class="form-container">
+                    <div class="topic">
+                        <h2 class="signup-form-heading">Sign up</h2>
+                        <img class="ml-auto" src="images/icons8-x-48.png" alt="">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" id="name" aria-describedby="mobileHelp"
+                            placeholder="Full Name">
+                        <br>
+                        <input type="email" class="form-control form-control-lg" id="Gmail"
+                            aria-describedby="mobileHelp" placeholder="Email">
+                        <br>
+                        <input type="checkbox" aria-checked="false" color="#ED5A6B">
+                        <span class="terms">I agree to Zomato's <a href="/conditions"
+                                class="">Terms of Service</a>, <a href="/privacy"
+                                class="">Privacy Policy</a> and <a href="/policies"
+                                class="">Content Policies</a></span>
+                    </div>
+                    <div class="createaccount">
+                        <button type="submit" class="btn btn-lg  btn-block btn-info">Create account</button>
+                        <!-- <br> -->
+                    </div>
+                    <div class="or mt-1">
+                        <p>or</p>
+                    </div>
+                    <div class="signupgoogle">
+                        <button type="submit" class="btn  btn-block btn-lg "><i class="fa-brands fa-google"></i> Continue
+                            with google</button>
+                    </div>
+                    <p class="alreadyaccount">
+                        Already have an account?<a href="">Login</a>
+                    </p>
+                </form>
+            </section>
+        </section>
+    </section>
+
+</body>
+
+</html>

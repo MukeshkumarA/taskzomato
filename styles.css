@@ -1,0 +1,863 @@
+*{
+    font-family: 'okra',Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+/* Header */
+
+.navbar{
+    top:5px;
+    z-index: 1;
+}
+.navbar-brand i{
+    color: black;
+}
+
+a.navbar-brand{
+    font-size: 14px;
+    font-weight: bold;
+    color: white!important;
+}
+
+
+.navbar-collapse ul li a{
+    font-size: 1.2rem;
+    color: white!important;
+}
+
+@media screen and (min-width:992px) {
+    .navbar{
+        margin-left:120px;
+    }
+    .navbar-collapse ul{
+        padding-right: 80px;
+    }
+    .navbar-collapse ul li{
+        padding-right: 20px;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    a.navbar-brand{
+       display: none;
+    }
+}
+/* header */
+
+
+/* header Bg-image */
+
+.bg-img .img{
+    position: absolute;
+    top: -22px;
+    left: 0px;
+    height:70%;
+    width: 100%;
+    object-fit: cover;
+    /* z-index: -1; */
+    /* transform: scale(1.1); */
+}
+
+
+
+
+
+
+
+/* Middle */
+
+.center .zomato,.h1,.inputs{
+    position: relative;
+}
+
+
+.zomato{
+    width: 300px;
+}
+
+@media screen and (min-width:991px) {
+    .zomato{
+        top:30px;
+    }
+    
+}
+
+@media  (max-width:480px) {
+     .center .zomato{
+        top:90px;
+    } 
+    /* .center{
+        margin-top: 100px;
+    } */
+}
+
+
+.center .h1{
+    font-family: Okra, Helvetica, sans-serif; 
+    top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight:normal;
+}
+
+@media (max-width: 480px){
+    .center .h1{
+    top: 4rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+ }
+}
+
+
+.input-group input::placeholder{
+    font-size: 16px;
+    justify-content: space-around;
+}
+
+div .input-group{
+    margin: auto;
+}
+
+.placeicon{
+    font-family:  Okra, Helvetica, sans-serif,fontawesome;
+}
+
+.input-group{
+    top: 18px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px){
+    .input-group{
+        top: 40px;
+        object-fit: contain;
+    }
+}
+
+/* @media screen and (min-width:1280px) {
+    .center{
+        margin-top: 80px;
+    } 
+    
+} */
+
+
+
+
+
+
+
+
+/*Dinning Card */
+
+
+    
+  .card-img-top{
+    height: 150px;
+    object-fit: cover;
+  }
+  .card-deck .card{
+    border-radius: 15px;
+    border-color: none;
+  }
+
+ 
+
+  /* 
+
+ @media (max-width:480px) {
+    .card-deck{
+         padding:30px 100px; 
+        margin-top: 22%;
+      }
+  }
+
+  @media (max-width:768px) {
+    .card-deck{
+         padding:30px 100px; 
+        margin-top: 22%;
+      }
+}
+
+@media (max-width:991px) {
+    .card-deck{
+         padding:30px 100px; 
+        margin-top: 10%;
+      }
+    
+}  */
+
+
+  .online{
+    /* padding:30px 100px; */
+    margin-top: 170px ;
+    left: 100px;
+    border-radius: 25px;
+  }
+
+    .online img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .online .text{
+        height: 80px;
+        /* border:1px solid #E8E8E8;
+        border-top-color: white;
+        border-radius: 0 0 15px 15px;
+        border-color: #696969; */
+        background: white;
+        border: 1px solid #E8E8E8;
+        border-radius: 0 0 1.2rem 1.2rem;
+        box-sizing: border-box;
+    }
+
+
+    .online .card-img-top{
+        height: 170px;
+        object-fit: cover;
+      }
+
+     .text .card-title{
+        margin-top: 12px;
+       font-weight: 550;
+       margin-left: 15px;
+        padding: 0;
+       font-size: 20px;
+       font-family: 'Okra',Helvetica, sans-serif;
+       color: #363636;
+    } 
+
+   .online .text p{
+    margin-top: -8px;
+    margin-left: 15px;
+   font-size: 16px;
+   font-family: 'Okra',Helvetica, sans-serif;
+   color: #4f4f4f;
+    }
+
+
+    @media screen and (max-width:1200px) {
+        .online{
+            margin-top: 280px ;
+        }
+        
+    }
+    @media screen and (max-width:992px) {
+        .online{
+            margin-top: 180px ;
+        }
+        
+    }
+
+    @media screen and (max-width:768px) {
+        .online{
+            margin-top: 150px ;
+        }
+        
+    }
+
+    @media screen and (max-width:480px) {
+        .online{
+            margin-top: 200px ;
+        }
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Collection*/
+    .content{
+        display: inline-flex;
+    }
+    .trend{
+        font-weight:lighter;
+        font-size: 18px;
+    }
+    .collection-link{
+        margin-left: 150px;
+        font-weight: 300;
+        color: rgb(255, 126, 139);
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .collection a:hover{
+        color: rgb(255, 126, 139);
+       text-decoration: none!important;
+    }
+
+    /* @media (min-width:991px){
+    .collection-link{
+        margin-left: 50px;
+    }
+    } */
+
+
+
+
+
+
+
+
+
+
+  /* Grid image */
+
+    .grid img{
+        border-radius: 5px;
+        width: 105%;
+        
+       
+    }
+    .row img{
+        height: 320px;
+        object-fit: cover;
+    }
+
+    /* @media screen and (max-width:480px) {
+        .grid1 img{
+            width: 200px;
+         }
+
+         .row .grid1{
+            /* flex-direction: unset; 
+            justify-content: space-between;
+          }
+
+        
+    } */
+
+        .grid  .head{
+            position: absolute;
+            margin-top:-20%;
+            margin-left: 5%;
+            font-size: large;
+            color:#fff;
+        }
+
+        .grid .place{
+            position: absolute;
+            margin-top: -11%;
+            margin-left: 5%;
+            font-size: medium;
+             color:#fff;
+        }
+
+
+
+        /* populat title */
+
+        .popular-title{
+            color: rgb(54, 54, 54);
+            font-size: 2.2rem;
+            line-height: 1.2;
+            font-weight: 100;
+            
+        }
+        .popular-title span{
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width:960px) {
+            .popular-title{
+                color: rgb(54, 54, 54);
+                font-size: 1.9rem;
+                line-height: 1.2;
+                font-weight: 100;
+                
+            }
+            .popular-title span{
+                font-size: 2.1rem;
+                font-weight: 500;
+            }
+            
+        }
+        @media screen and (max-width:720px) {
+            .popular-title{
+                color: rgb(54, 54, 54);
+                font-size: 1.6rem;
+                line-height: 1.2;
+                font-weight: 100;
+                
+            }
+            .popular-title span{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            
+        }
+        @media screen and (max-width:540px) {
+            .popular-title{
+                color: rgb(54, 54, 54);
+                font-size: 1.3rem;
+                line-height: 1.2;
+                font-weight: 100;
+                
+            }
+            .popular-title span{
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            
+        }
+
+
+
+
+
+
+
+
+/* Table */
+        .col{
+            padding:10px;
+            /* margin-left: 30px; */
+            margin:10px 10px;
+            /* border: 1px solid   black; */
+            border:1px solid rgb(232, 232, 232);
+            border-radius: 5px;
+        }
+
+        .col .table-title{
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 100;
+            color: rgb(28, 28, 28);
+             margin: 0px 0px 0.5rem;
+        }
+        .col .table-places{
+            /* font-size: inherit; */
+            line-height: 1.5;
+            margin: 0px;
+            color: rgb(54, 54, 54);
+        }
+
+        .table a:hover{
+            text-decoration: none;
+        }
+
+
+
+
+
+        /*App Download  */
+
+        .app .row{
+            /* padding:20px 80px; */
+            margin-left: 200px;
+        }
+
+         .app .appcolumn1{
+            padding-top: 40px;
+        } 
+
+        .app{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(255, 251, 247);
+        }
+
+        @media screen and (max-width:560px)
+        {
+            .appcolumn1{
+            margin-left: -100px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        .app .appcolumn2 h1{
+            font-size: 40px;
+        }
+
+        .app .appcolumn2 .p1{
+           margin-top: 20px;
+           font-size: 16px;
+           color:rgb(54, 54, 54);
+           font-family: okra,Arial, Helvetica, sans-serif;
+        }
+
+        .app .appcolumn2 form{
+            margin-top: 25px;
+            color:rgb(54, 54, 54);
+        }
+
+        .app .appcolumn2 form .input2{
+            margin-left: 10px;
+        }
+
+        /* input[type=email]{
+            width: 50%;
+            padding: 12px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            font-size: 18px;
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 0.3rem;
+            box-sizing: border-box;
+          } */
+          
+         #contact{
+            width: 50%;
+            padding: 12px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            font-size: 18px;
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 0.3rem;
+            box-sizing: border-box;
+          }
+
+          .app .appcolumn2 .button {
+            background-color: rgb(239, 79, 95);
+            border-color: rgb(239, 79, 95);
+            border:none;
+            border-radius: 0.3rem;
+            align-items: stretch;
+            color: white;
+            padding: 15px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+
+          .app .appcolumn2 .p2{
+            font-size: 14px;
+            color: #9c9c9c;
+
+          }
+
+
+
+          .explore{
+                color: rgb(54, 54, 54);
+                font-size: 1.8rem;
+                line-height: 1.2;
+                font-weight: 300;
+          }
+
+
+
+
+
+    /* Table 2 */
+
+    .table2 .col{
+        padding:15px;
+       
+        border:1px solid rgb(232, 232, 232);
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .table2 .table-title{
+        font-size: 1.2rem;
+        line-height: 1.2;
+        font-weight: 100;
+        color: rgb(28, 28, 28);
+    }
+
+    .table2 a:hover{
+        text-decoration: none;
+    }
+
+
+    .zomato-middle{
+        background-color: rgb(255, 251, 247);
+    }
+
+
+
+
+
+    /* footer */
+
+     .footer .first .btn{
+        border-color: black;
+     }
+
+     .dropdown-menu li a{
+        color: black;
+        padding: 6px 16px;
+        text-decoration: none;
+        display: block;
+     }
+
+     .dropdown-menu li a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .country{
+        display: inline-flex;
+        position: absolute;
+        padding-left: 60%;
+    }
+    .language{
+        display: inline-flex;
+        position: absolute;
+        padding-right: 5%;
+    }
+
+
+
+
+
+
+
+    /* footer-row */
+
+    .footer-row .row .foot h6{
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: black;
+        font-weight: 700;
+    }
+
+    .footer-row .row .foot ul li{
+        list-style-type: none;
+    }
+
+    .footer-row .row .foot ul li a{
+         color: #696969; 
+         font-size: 13px;
+         transition: 0.5s;
+    } 
+
+    .footer-row .row .foot ul li a:hover{
+        text-decoration: none;
+        color: black;
+        transform: scale(1.3);
+    } 
+
+
+    .footer{
+        background-color: #f1f1f1;
+       padding-top:20px;
+    }
+
+
+
+    /* .copyright hr,p{
+        margin-right: 10%;
+    }
+
+    .copyright p{
+        font-size: 12px;
+    } */
+
+
+/* .card-deck .card{
+    /* margin: 100px 10%; 
+    left: 10%;
+    width: 80%;
+   border-radius: 10px;
+   border-top: none;
+   align-items: flex-end;
+   height: 100px;
+   padding-left: 0 10%;
+}
+
+.card-deck img{
+    height: 100px;
+    object-fit: cover;
+}
+.card-deck .card-body{
+     font-size: smaller;
+    height: 50px;
+}
+.card-deck .card-body p{
+    margin-top: -10px;
+   
+    font-size: x-small;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .card-deck{
+        width: 250px;
+        height: 200px;
+    }
+    .card-deck img{
+         width: 250px;
+         height: 200px;
+    }
+}  */
+
+
+
+
+/* popup login form */
+
+.logintopic {
+    display: flex;
+}
+.login-form-heading{
+    color: rgba(60, 77, 73, 0.897);
+}
+
+.loginform img{
+    width: 30px;
+    height: 25px;
+}
+
+ .poplogin /*form-container*/ { 
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    top: 15vh;
+    border:1px solid black;
+}
+
+.or {
+    text-align: center;
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+ input .login{
+    font-family: Okra,Helvetica, sans-serif,fontawesome;
+    border: 1px solid black;
+ }
+
+
+.loginform{
+    display: none;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Pop up SignUp form */
+
+.signUp .topic {
+    display: flex;
+}
+
+.signUp .signup-form-heading {
+    color: rgb(79, 79, 79);
+}
+
+.signUp img {
+    width: 30px;
+    height: 25px;
+}
+
+.signUp .form-container {
+    /* background-color: #0f0; */
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    top: 10vh;
+    border: 1px solid rgb(99, 95, 95);
+}
+
+body {
+    font-family: okra, Helvetica, sans-serif;
+}
+
+.signUp .or {
+    text-align: center;
+    margin-top: 3px;
+    font-size: 18px;
+    color: darkcyan;
+}
+
+.signUp input {
+    font-family: Okra, Helvetica, sans-serif, fontawesome;
+    font-size: 16px;
+}
+
+.signUp .terms{
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+.signUp .terms a{
+    /* font-size: 16px; */
+    color:rgb(239, 79, 95);
+}
+.signUp .btn{
+    font-size: 16px;
+}
+
+
+.signUp .signupgoogle .btn
+{
+    margin-top: -10px;
+    color: #696969;
+}
+
+.signUp .alreadyaccount{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #1c1c1c;
+}
+
+.signUp .alreadyaccount a{
+    color: rgb(239, 79, 95);
+    }
+
+ 
+.signUp{
+    display: none;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+
+}

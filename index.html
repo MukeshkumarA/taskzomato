@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="icon" type="image/png" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+
+    <script src="script.js"></script>
+
+
+    
+
+  </head>
+
+
+<body>
+  <div id="body">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler" onclick="changeBgColor()" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><i class="fa fa-mobile" aria-hidden="true"></i> Get the App</a>
+
+        <ul class="container-md navbar-nav ml-lg-auto ml-md-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Invester Relations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Add restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="openLogin()">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="openSignUp()">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Background Image -->
+    <div class="bg-img">
+      <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" class="img-fluid img"
+        alt="Responsive image">
+  </header>
+
+
+<!-- Middle -->
+  <section>
+  
+    <div class="container-fluid center">
+      <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+        class="img-fluid  mx-auto d-block ml-auto zomato" alt="Zomato" role="presentation">
+
+
+      <h1 class="h1 mt-5">
+        Discover the best food & drinks in
+        <span>Madurai</span>
+      </h1>
+
+      <div class="input-group input-group-lg  mt-4 col-sm-7">
+        <input type="text" aria-label="First name" class="form-control placeicon"
+          placeholder="&#xf3c5; Madurai             ">
+        <input type="text" aria-label="Last name" class="form-control placeicon"
+          placeholder="&#xf002;   Search for restaurant, cusine or a dish ">
+      </div>
+
+    </div>
+
+  </section>
+
+
+     <!-- <section>
+        <div class="card-deck">
+            <div class="card ">
+              <img class="card-img-top rounded-top-3" src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Order Online</h5>
+                <p class="card-text">Stay home and order to your doorstep</p>
+              </div>
+            </div>
+
+            <div class="card ">
+              <img class="card-img-top " src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Dining</h5>
+                <p class="card-text">View the city's favourite dining venues</p>
+              </div>
+            </div>
+          </div>
+     </section> -->
+
+     <section class="container">
+        <div class="row ml-auto online">
+              
+            <div class="imgbox col-6">
+              <div class="img">
+                <img class="card-img-top rounded-top-3" src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Card image cap">
+                <div class="text">
+                  <h5 class="card-title">Order Online</h5>
+                  <p class="card-text">Stay home and order to your doorstep</p>
+                </div>
+              </div>
+              </div>
+
+            <div class="imgbox col-6">
+              <div class="img">
+                  <img  class="card-img-top"  src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Card image cap">
+                <div class="text">
+                  <h5 class="card-title">Dining</h5>
+                  <p class="card-text">View the city's favourite dining venues</p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+     </section>
+
+
+      <br>
+
+     <section class="collection">
+        <div class="container">
+            <div>
+            <h1>Collections</h1>
+            </div>
+
+            <div class="content">
+            <p class="trend">Explore curated lists of top restaurants, cafes, pubs, and bars in Madurai, based on trends</p>
+            <a href="" class="collection-link">All collections in Madurai</a>
+            <i color="#FF7E8B" size="12"><svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="12" height="12"></svg></i>
+           </div>
+        </div>
+        <br>
+        </section>
+
+
+ <section>
+      <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6 col-xl-3">
+          <div class="grid collection1">
+          <a href="">
+          <img src="https://b.zmtcdn.com/data/collections/ecec46ffb5bc20bebe0857c47f630fc5_1535354925.jpg?output-format=webp" alt="">
+          <p class="head">Brilliant Briyanis</p>
+          <p class="place">7 Places</p>
+        </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6 col-xl-3">
+          <div class="grid">
+            <a href="">
+          <img src="https://b.zmtcdn.com/data/collections/454e33b19950986d4c7c34bc70f99ada_1612856400.jpg?output-format=webp" alt="" >
+          <p class="head">Luxury Dining</p>
+          <p class="place">6 Places</p>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6 col-xl-3">
+          <div class="grid">
+            <a href="">
+          <img src="https://b.zmtcdn.com/data/collections/d7177d9b4a634c9d64b899eae755aba2_1528280579.jpg?output-format=webp" alt="">
+          <p class="head">Must visit restaurants in Mad...</p>
+          <p class="place">12 Places</p>
+        </a>
+        </div>  
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6 col-xl-3">
+          <div class="grid">
+            <a href="">
+          <img src="https://b.zmtcdn.com/data/collections/2e5c5dc79d4b465797c8e425d814f42c_1582256432.jpg?output-format=webp" alt="">
+          <p class="head">Veggie Friendly</p>
+          <p class="place">6 Places</p>
+        </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <br><br><br><br>
+  </section>
+
+    <div class="popular-title container">
+          <p>Popular localities in and around <span>Madurai</span> </p>
+    </div>
+
+    <section class="table">
+      <div class="container">
+      <a href="">
+      <div class="row">
+        <div class="col">
+          <h5 class="table-title">KK Nagar</h5>
+          <p class="table-places">210 places</p>
+
+        </div>
+        <div class="col">
+          <h5 class="table-title">Periyar</h5>
+          <p class="table-places">166 places</p>
+
+        </div>
+        <div class="col">
+          <h5 class="table-title">Viswanathapuram</h5>
+          <p class="table-places">120 places</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="">
+      <div class="row">
+        <div class="col">
+          <h5 class="table-title">SS Colony</h5>
+          <p class="table-places">115 places</p>
+
+        </div>
+        <div class="col">
+          <h5 class="table-title">Sathamangalam</h5>
+          <p class="table-places">101 places</p>
+
+        </div>
+        <div class="col">
+          <h5 class="table-title">Iyer Bungalow</h5>
+          <p class="table-places">83 places</p>
+        </div>
+      </div>
+    </a>
+    
+    <a href="">
+      <div class="row">
+        <div class="col">
+          <h5 class="table-title">Arrapalayam</h5>
+          <p class="table-places">74 places</p>
+
+        </div>
+        <div class="col">
+          <h5 class="table-title">Othakadai</h5>
+          <p class="table-places">41 places</p>
+
+        </div>
+        <div class="col">
+          <h5 class="table-title">Koodal Nagar</h5>
+          <p class="table-places">39 places</p>
+        </div>
+      </div>
+    </a>
+  </div>
+    </section>
+      <br>
+      <br>
+
+
+
+
+  <section class="zomato-middle container-fluid">
+
+    <div class="app">
+      <div class="row ">
+        <div class="appcolumn1 col-lg-4 col-md-3 col-sm-6">
+            <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="zomatoapp">
+        </div>
+        <div class="appcolumn2 col-lg-6">
+            <h1>Get the Zomato app</h1>
+            <p class="p1">We will send you a link, open it on your phone to download the app</p>
+
+            <form action="">
+              <div class="form">
+               <input type="radio" name="connect" id="email" value="Email" onclick="myFunction()">
+               <label for="email">Email</label>
+              
+               <input class="input2" type="radio" name="connect" id="phone" value="Phone" onclick="myFunction1()">
+               <label for="phone">Phone</label>
+
+              </div>
+
+               <input type="email/phone" name="email" id="contact">
+                <button class="button" type="submit">Share App Link</button>
+            </form>
+             
+            <br>
+              <p class="p2">Download app from</p>
+              <div class="download">
+                <a href=""><img style="height:40px; width: 137px;" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt=""></a>
+                <a href=""><img  style="height:40px; width: 137px;" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" ></a>
+              </div>
+        </div>
+
+      </div>
+
+    </div>
+   
+
+
+
+    <!-- footer table -->
+    <div class="explore container">
+      <p>Explore options near me</p>
+    </div>
+
+
+
+    <section class="table2">
+      <div class="container">
+      <a href="">
+      <div class="row">
+        <div class="col">
+          <h5 class="table-title">Popular cuisines near me</h5>
+       </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="row">
+        <div class="col">
+          <h5 class="table-title">Popular restaurant types near me</h5>
+       </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="row">
+        <div class="col">
+          <h5 class="table-title">Cities We Deliver to</h5>
+       </div>
+      </div>
+    </a>
+    </div>
+    </section>
+    <br><br>
+    </section>
+
+
+
+    <section  class="footer container-fluid">
+      <!-- <br> -->
+      <div class="first container-fluid">
+        <img class="ml-5" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="Zomato-logo" width="132px" height="28px">
+        <div class="btn-group country ">
+          <button type="button" class="btn  dropdown-toggle float-right " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i></i> India
+          </button>
+          <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a href=""><i></i>India</a></li>
+              <li><a href=""><i></i>Australia</a></li>
+              <li><a href=""><i></i>Brazil</a></li>
+              <li><a href=""><i></i>Canada</a></li>
+              <li><a href=""><i></i>Chile</a></li>
+              <li><a href=""><i></i>Czech Republic</a></li>
+              <li><a href=""><i></i>Indonesia</a></li>
+              <li><a href=""><i></i>Ireland</a></li>
+              <li><a href=""><i></i>Italy</a></li>
+              <li><a href=""><i></i>New Zealand</a></li>
+          </div>
+        </div>
+
+        <div class="btn-group language" >
+          <button type="button" class="btn  dropdown-toggle float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i></i> English
+          </button>
+          <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a href="">English</a></li>
+            <li><a href="">Turkce</a></li>
+            <li><a href="">Portugues(BR)</a></li>
+            <li><a href="">Indonesian</a></li>
+            <li><a href="">Portugues(PT)</a></li>
+            <li><a href="">Itlian</a></li>
+            <li><a href="">Polish</a></li>
+            <li><a href="">Slovencia</a></li>
+            <li><a href="">Vietnamese</a></li>
+
+          </div>
+        </div>
+      </div>
+
+
+      <br><br>
+
+
+      <div class="footer-row container-fluid">
+
+        <div class="row ml-5 mr-auto">
+
+          <div class="foot col-lg-2 col-sm-3">
+            <h6 class="footer_heading">ABOUT ZOMATO</h6>
+            <ul>
+              <li><a href="#" class="who_we_are">Who We Are</a></li>
+              <li><a href="#" class="blog">Blog</a></li>
+              <li><a href="#" class="work_with_us">Work With Us</a></li>
+              <li><a href="#" class="investor_relations_footer">Investor Relations</a></li>
+              <li><a href="#" class="report_fraud">Report Fraud</a></li>
+              <li><a href="#" class="contact_us">Contact Us</a></li>
+          </ul>
+         </div>
+
+
+         <div class="foot col-lg-2 col-sm-3">
+          <h6 class="footer_heading">ZOMAVERSE</h6>
+          <ul>
+            <li><a href="#" class="zomato_footer">Zomato</a></li>
+            <li><a href="#" class="feeding_india">Feeding India</a></li>
+            <li><a href="#" class="hyperpure">Hyperpure</a></li>
+            <li><a href="#" class="zomaland">Zomaland</a></li>
+          </ul>
+        </div>
+
+
+       <div class="foot col-lg-2 col-sm-3">
+              <h6 class="footer_heading">FOR RESTAURANT</h6>
+         <ul>
+               <li><a href="#" class="partner_with_us">Partner With Us</a></li>
+              <li><a href="#" class="apps_for_you">Apps For You</a></li>
+          </ul>
+
+           <h6 class="footer_heading">FOR ENTERPRISES</h6>
+          <ul>
+              <li><a href="#" class="zomato_for_work">Zomato For Work</a></li>
+         </ul>
+      </div>
+
+       <div class="foot col-lg-2 col-sm-3">
+            <h6 class="footer_heading">LEARN MORE</h6>
+         <ul>
+                <li><a href="#" class="privacy">Privacy</a></li>
+                <li><a href="#" class="security">Security</a></li>
+                <li><a href="#" class="terms">Terms</a></li>
+                <li><a href="#" class="sitemap">Sitemap </a></li>
+            </ul>
+        </div>
+
+
+      <div class="foot  col-lg-2 col-sm-3">
+        <h6 class="footer_heading">SOCIAL LINKS</h6>
+        <div>
+          <span style="color: black;font-size:25px;"><i class="fa-brands fa-linkedin"></i></span>
+          <span style="color: black;font-size:25px;"><i class="fa-brands fa-square-instagram"></i></span>
+          <span style="color: black;font-size:25px;"><i class="fa-brands fa-square-twitter"></i></span>
+          <span style="color: black;font-size:25px;"><i class="fa-brands fa-youtube"></i></span>
+          <span style="color: black;font-size:25px;"><i class="fa-brands fa-square-facebook"></i></span>
+        </div>
+        <ul class="mt-1">
+          <li><img type="button" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="get on google play" style="height: 40px; width: 138px; margin-top: 5px;  cursor: pointer;"></li>
+          <li><img type="button" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="get on app store" style="height: 40px; width: 138px;  margin-top: 5px; cursor: pointer;"></li>
+      </ul>
+
+     </div>
+        
+    </div>
+    
+     <!-- <br>
+     <div class="container-fluid ml-5 copyright ">
+     <hr><br>
+     <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
+    </div> -->
+    </div>
+  
+ </section>
+</div>
+
+
+
+ <!-- PopUp Login form -->
+
+ <section class="container loginform" id="overlaylogin" >
+  <section class="row  justify-content-center">
+      <section class="col-lg-5 col-md-8 col-sm-8 col-xl-5 " id="LoginForm">
+          <form class="form-container poplogin">
+              <div class="logintopic">
+                  <h2 class="login-form-heading">Login</h2>
+                  <img class="ml-auto imglogin" src="images/icons8-x-48.png" alt="" onclick="closeLogin()">
+              </div>
+              <br>
+              <div class="form-group">
+                  <input type="number" class="form-control form-control-lg login" id="exampleInputNumber1"
+                      aria-describedby="mobileHelp" placeholder="&#xf095; Phone">
+              </div>
+              <div class="otp bg-pink bg-lighten-1">
+                  <button type="submit" class="btn btn-lg  btn-block btn-success">Send One Time Password</button>
+                  <!-- <br> -->
+              </div>
+              <div class="or">
+                  <p>or</p>
+                  <!-- <br> -->
+              </div>
+              <div class="mail">
+                  <button type="submit" class="btn  btn-block btn-lg"><i class="fa-solid fa-envelope"></i>
+                      Continue with Email</button>
+                  <br>
+              </div>
+              <div class="google">
+                  <button type="submit" class="btn  btn-block btn-lg"><i class="fa-brands fa-google"></i> Continue
+                      with google</button>
+              </div>
+          </form>
+      </section>
+  </section>
+</section>
+
+
+
+<!-- pop-up SignUp form -->
+<section class="container signUp" id="overlaysignup"> 
+  <section class="row  justify-content-center">
+      <section class="col-md-7 col-sm-7 col-xl-5 col-lg-5" id="signup-form">
+          <form class="form-container">
+              <div class="topic">
+                  <h2 class="signup-form-heading">Sign up</h2>
+                  <img class="ml-auto" src="images/icons8-x-48.png" alt="" onclick="closeSignUp()">
+              </div>
+              <br>
+              <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="name" aria-describedby="mobileHelp"
+                      placeholder="Full Name">
+                  <br>
+                  <input type="email" class="form-control form-control-lg" id="Gmail"
+                      aria-describedby="mobileHelp" placeholder="Email">
+                  <br>
+                  <input type="checkbox" aria-checked="false" color="#ED5A6B">
+                  <span class="terms">I agree to Zomato's <a href="/conditions"
+                          class="">Terms of Service</a>, <a href="/privacy"
+                          class="">Privacy Policy</a> and <a href="/policies"
+                          class="">Content Policies</a></span>
+              </div>
+              <div class="createaccount">
+                  <button type="submit" class="btn btn-lg  btn-block btn-info">Create account</button>
+                  <!-- <br> -->
+              </div>
+              <div class="or mt-1">
+                  <p>or</p>
+              </div>
+              <div class="signupgoogle">
+                  <button type="submit" class="btn  btn-block btn-lg "><i class="fa-brands fa-google"></i> Continue
+                      with google</button>
+              </div>
+              <p class="alreadyaccount">
+                  Already have an account?<a href="">Login</a>
+              </p>
+          </form>
+      </section>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
